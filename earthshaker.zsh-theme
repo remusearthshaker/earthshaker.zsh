@@ -22,4 +22,3 @@ PROMPT='%F{223}%n@%m %F{240}in %F{180}%~$(git_prompt_info) %F{173}❯ %f'
 
 # Apply background and cursor (only works in some terminals)
 print -Pn "%{\e]11;#1c1b1a%}"   # Background
-print -Pn "%{\e]12;#e49b5d%}"   # Cursor
