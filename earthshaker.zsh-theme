@@ -1,24 +1,23 @@
 # Earthshaker ZSH Theme for oh-my-zsh
 # Save as ~/.oh-my-zsh/themes/earthshaker.zsh-theme
 
-# Define Earthshaker palette
-local_user_color="%F{223}"  # parchment (#d8c8b3)
-local_dir_color="%F{180}"   # gold (#deb769)
-local_git_color="%F{173}"   # copper (#e49b5d)
-local_symbol_color="%F{240}" # faded gray
+# Define Earthshaker Blooming Forest Palette
+local_user_color="%F{223}"    # sunlight parchment
+local_host_color="%F{187}"    # warm leaf gold
+local_dir_color="%F{150}"     # budding green
+local_git_clean_color="%F{114}"  # healthy sap green
+local_git_dirty_color="%F{208}"  # warm sunset orange
+local_symbol_color="%F{244}"  # soft stone gray
 local_reset="%f%k"
 
-# Prompt segments
-PROMPT="${local_user_color}%n@%m ${local_symbol_color}in ${local_dir_color}%~ ${local_git_color}❯ ${local_reset} "
-
 # Git prompt settings
-ZSH_THEME_GIT_PROMPT_PREFIX=" %F{173}git:(%F{166}"  # copper & rust
-ZSH_THEME_GIT_PROMPT_SUFFIX="%F{173})%f"
-ZSH_THEME_GIT_PROMPT_DIRTY="%F{208}✗%f"
-ZSH_THEME_GIT_PROMPT_CLEAN="%F{70}✓%f"
+ZSH_THEME_GIT_PROMPT_PREFIX=" ${local_git_clean_color}git:(%F{220}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="${local_git_clean_color})%f"
+ZSH_THEME_GIT_PROMPT_DIRTY="${local_git_dirty_color}✗%f"
+ZSH_THEME_GIT_PROMPT_CLEAN="${local_git_clean_color}✓%f"
 
-# Updated prompt with Git info
-PROMPT='%F{223}%n@%m %F{240}in %F{180}%~$(git_prompt_info) %F{173}❯ %f'
+# Prompt layout
+PROMPT="${local_user_color}%n${local_symbol_color}@${local_host_color}%m ${local_symbol_color}in ${local_dir_color}%~\$(git_prompt_info) ${local_git_clean_color}❯ ${local_reset} "
 
-# Apply background and cursor (only works in some terminals)
-print -Pn "%{\e]11;#1c1b1a%}"   # Background
+# Optional: Force block cursor if needed (commented out for now)
+# print -Pn "%{\e[2 q%}"
