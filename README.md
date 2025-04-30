@@ -59,6 +59,12 @@ plugins=(git)
 
 ---
 
+## Screenshots
+
+![Earthshaker ZSH](assets/earthshakerzsh.png)
+
+---
+
 ## 📜 License
 
 Licensed under the MIT License. Use, fork, customize — just keep the vibes alive.
