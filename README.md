@@ -63,6 +63,9 @@ plugins=(git)
 
 ![Earthshaker ZSH](assets/earthshakerzsh.png)
 
+> screenshot shown with [earthshaker.kitty](https://github.com/remusearthshaker/earthshaker.kitty)
+> and [earthshaker.hyprland](coming soon!)
+
 ---
 
 ## 📜 License
