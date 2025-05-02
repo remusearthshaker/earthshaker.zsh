@@ -17,7 +17,7 @@ ZSH_THEME_GIT_PROMPT_DIRTY="${local_git_dirty_color}✗%f"
 ZSH_THEME_GIT_PROMPT_CLEAN="${local_git_clean_color}✓%f"
 
 # Prompt layout
-PROMPT="${local_user_color}%n${local_symbol_color}@${local_host_color}%m ${local_symbol_color}in ${local_dir_color}%~\$(git_prompt_info) ${local_git_clean_color}❯ ${local_reset} "
+PROMPT="${local_user_color}%n${local_symbol_color}@${local_host_color}%m ${local_symbol_color}in ${local_dir_color}%~\$(git_prompt_info) ${local_git_clean_color}❯ ${local_reset}"
 
 # Optional: Force block cursor if needed (commented out for now)
 # print -Pn "%{\e[2 q%}"
